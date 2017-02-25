@@ -1,0 +1,342 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	background: url(../img/sf-bg.jpg) top center fixed;
+	background-size: none 600px;
+}
+
+body > header {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 93px;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+}
+
+/******************************************* Nav */
+header > nav {
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	line-height: 90px;
+	height: 100%;
+	text-align: right;
+	margin-left: 93px;
+}
+
+nav a:link, nav a:visited {
+	text-decoration: none;
+	color: white;
+	font-weight: 300;
+	margin: 0 2%;
+}
+nav a.active {
+	padding-bottom: 29px;
+	border-bottom: 10px solid #F7931E;
+}
+
+/******************************************* Hero */
+.hero {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	text-transform: uppercase;
+}
+
+.hero .container h1, .hero .container p {
+	font-family: Oswald, Impact;
+	color: white;
+}
+.hero .container h1 strong {
+	color: #F7931E;
+}
+.container h1 {
+	font-size: 6em;
+	padding-bottom: 0; margin-bottom: 0;
+}
+.container p {
+	font-size: 1.6em;
+	padding-top: 0; margin-top: 0;
+}
+
+body > header::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 93px;
+	height: 93px;
+	background-color: #F7931E;
+	background-image: url(../img/logo-small.png);
+}
+
+section header::after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 5px;
+	width: 126px;
+	background-color: #F7931E;
+}
+
+/******************************************* Sections */
+section {
+	display: block;
+	padding-top: 42px;
+	padding-bottom: 110px;
+	text-align: center;
+}
+
+section header {
+	text-align: center;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+section header h2 {
+	font-family: Oswald, Impact;
+	font-size: 4.4em;
+	text-transform: uppercase;
+	padding-bottom: 0.1em; margin-bottom: 0;
+}
+
+section header p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	padding-top: 0; margin-top: 0;
+	color: #999999;
+	text-transform: uppercase;
+}
+
+section.about > span {
+	display: inline-block;
+	margin: 30px;
+	text-align: left;
+	vertical-align: middle;
+	width: 50%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+/* Section Color Adjustments */
+section.white {
+	background-color: white;
+}
+section.silver {
+	background-color: #F2F2F2;
+}
+section.orange {
+	background-color: #F7931E;
+}
+section.orange p, section.orange span {
+	color: white;
+}
+section.black {
+	color: white;
+	background-color: black;
+}
+section.black p {
+	color: white;
+}
+section.orange header::after {
+	background-color: white;
+}
+
+/******************************************* Input Elements */
+
+section input[type="text"], input[type="email"], textarea {
+	display: block;
+	font-family: "Open Sans";
+	font-size: 1em;
+	color: #B3B3B3;
+	background-color: #F2F2F2;
+	width: 420px;
+	padding: 12px;
+	margin: 10px auto;
+	border: 0;
+}
+
+section.contact textarea {
+	max-width: 420px;
+	height: 180px;
+}
+
+button, input[type="button"], input[type="submit"] {
+	display: block;
+	font-family: "Open Sans";
+	font-size: 1em;
+	padding: 12px 20px;
+	margin: auto;
+	color: white;
+	background-color: #F7931E;
+	text-transform: uppercase;
+	border: 0;
+}
+
+/******************************************* Events Section */
+.event-month {
+	display: inline-block;
+	width: 360px;
+	margin: 0 20px;
+	vertical-align: top;
+}
+.event-entry {
+text-align: left;
+padding: 20px 0;
+border-bottom: 1px solid #F2F2F2;
+}
+.event-entry:last-child {
+border-bottom: none;
+}
+.event-month-name {
+	font-family: Oswald;
+	font-size: 2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.event-date {
+margin-right: 20px;
+display: inline-block;
+text-align: center;
+width: 55px;
+height: 55px;
+background-color: #F7931E;
+color: white;
+}
+.event-date .day {
+font-size: .8em;
+}
+.event-detail {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.event-title {
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-top: -7px;
+	max-width: 280px;
+}
+.event-loc {
+	color: #999999;
+}
+.event-date h3 {
+	font-family: Oswald;
+	font-size: 1.5em;
+	margin: 0 0 -4px;
+}
+
+.entypo-location { margin-right: 7px; margin-left: -15px; }
+
+/******************************************* Gallery, Team Sections */
+section.gallery img {
+	margin: 5px;
+	width: 320px;
+	height: auto;
+}
+
+section.team img {
+	position: absolute;
+	left: -100%;
+	right: -100%;
+	top: -80%;
+	bottom: -100%;
+	margin: auto;
+	width: auto;
+	height: 150%;
+}
+.dj.profile .dj-photo {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+.dj.profile {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	max-width: 200px;
+	margin: 20px;
+}
+.dj.profile h3, .dj.profile p {
+	text-transform: uppercase;
+}
+.dj.profile p {
+	font-size: .9em;
+	margin-top: -15px;
+	color: #F7931E;
+}
+
+.container.center-middle {
+	width: 100%;
+	height: 50%;
+	margin: auto;
+	position: absolute;
+	text-align: center;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+footer {
+	width: 100%;
+	background-color: #000000;
+	text-align: center;
+}
+
+/* Hero Fix */
+@media (min-width: 1280px) {
+	body { background-size: 100%; }
+}
+
+/******************************************* Entypo */
+[class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+.social-media [class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+	padding-right: 14px;
+	vertical-align: middle;
+}
+.social-media [class*="entypo-"] {
+	overflow: hidden !important;
+	display: inline-block;
+	width: 55px;
+	height:  38px;
+	-webkit-transition: width .3s;
+	-moz-transition: width .3s;
+	-ms-transition: width .3s;
+	-o-transition: width .3s;
+	transition: width .3s;
+	vertical-align: middle;
+}
+.social-media [class*="entypo-"]:hover {
+	width: 200px;
+}
+.contact [class*="entypo-"]:before {
+	font-size: 2.3em;
+	margin: 10px;
+}
+.social-media {
+	margin-top: 50px;
+}
+.social-media a:link, .social-media a:visited {
+	color: black;
+	-webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+	transition: color .3s;
+}
+.social-media a:hover {
+	color: #F7931E;
+	-webkit-transition: color .3s;
+	-moz-transition: color .3s;
+	-ms-transition: color .3s;
+	-o-transition: color .3s;
+	transition: color .3s;
+}
